@@ -1,0 +1,28 @@
+/*
+display 
+----parent
+  grid-template-columns: [nbr de colone]=>[px ,% ,auto,fr,MIX,repeat];
+    grid-template-rows: [nbr de ligne]=>[px ,% ,auto,fr,MIX,repeat];
+    gap:[column] [rows]
+
+
+*/
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(2, 25%) repeat(3, auto);
+  grid-template-rows: auto auto auto;
+  gap: 10px 10px;
+  /* justify-content: space-between;
+  align-content: space-between;*/
+}
+.parent div {
+  background-color: red;
+}

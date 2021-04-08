@@ -1,0 +1,31 @@
+/*
+content:--- parent
+display:grid |inline-grid
+--grid template column => number of column => []
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px 10px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.parent div {
+  background-color: blueviolet;
+  color: black;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
